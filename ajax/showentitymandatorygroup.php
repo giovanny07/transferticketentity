@@ -42,6 +42,7 @@ if (strpos($_SERVER['PHP_SELF'], "showentitymandatorygroup.php")) {
     die("Sorry. You can't access this file directly");
 }
 
+Toolbox::logInfo($_POST);
 if (isset($_POST['entity_selection'])) {
     $entitites_id = $_POST['entity_selection'];
 

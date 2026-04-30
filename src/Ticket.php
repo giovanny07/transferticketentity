@@ -181,11 +181,15 @@ class Ticket extends CommonDBTM
             return false;
         }
 
-
-        $entities_selection[0] = Dropdown::EMPTY_VALUE;
+        $group_required = 0;
+        $entities_selection[-1] = Dropdown::EMPTY_VALUE;
         foreach ($getEntitiesRights as $getEntitiesRight) {
             if ($getEntitiesRight['allow_transfer']) {
                 $entities_selection[$getEntitiesRight['entities_id']] = $getEntitiesRight['name'];
+            }
+
+            if ($getEntitiesRight['allow_entity_only_transfer'] == 1) {
+                $group_required = 1;
             }
         }
 
@@ -201,6 +205,7 @@ class Ticket extends CommonDBTM
                 'entities_id' => $ticket->getID(),
                 'entities_name' => $entity->getName(),
                 'entities' => $entities_selection,
+                'group_required' => $group_required,
             ],
         );
 

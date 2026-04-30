@@ -99,18 +99,19 @@
                         </div>
                     </div>
 
-                    <div class='form-field row align-items-center col-12 col-sm-12 mb-2'>
-                        <label class='col-form-label col-xxl-5 text-xxl-end' for='group_choice'>
-                            {{ __("Select the group to assign", "transferticketentity") }}
-                            <span id='showmandatorygroup'>
+                    {% if group_required is defined and group_required is true %}
+                        <div class='form-field row align-items-center col-12 col-sm-12 mb-2'>
+                            <label class='col-form-label col-xxl-5 text-xxl-end' for='group_choice'>
+                                {{ __("Select the group to assign", "transferticketentity") }}
+                                <span id='showmandatorygroup'>
+                                            </span>
+                            </label>
+                            <div class='col-xxl-7 field-container'>
+                                        <span id='show_entitygroup'>
                                         </span>
-                        </label>
-                        <div class='col-xxl-7 field-container'>
-                                    <span id='show_entitygroup'>
-                                    </span>
+                            </div>
                         </div>
-                    </div>
-
+                    {% endif %}
                     <div class='form-field row align-items-start col-12 col-sm-12 mb-2'>
                         <label class='col-form-label col-xxl-5 text-xxl-end' for='justification'
                                style='vertical-align: middle;'>
