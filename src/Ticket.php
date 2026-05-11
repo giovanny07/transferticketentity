@@ -550,7 +550,7 @@ class Ticket extends CommonDBTM
                 'entities_id' => $params['entity_choice'],
             ];
 
-            if ($params['group_choice'] && $params['group_choice'] > 0) {
+            if (!empty($params['group_choice']) && $params['group_choice'] > 0) {
                 $ticket_status = ['status' => CommonITILObject::ASSIGNED];
                 $ticket_update = array_merge($ticket_update, $ticket_status);
             } else {
@@ -558,20 +558,19 @@ class Ticket extends CommonDBTM
                 $ticket_update = array_merge($ticket_update, $ticket_status);
             }
 
-            // In case keep_category is at yes and category doesn't exist, reset category's ticket
-            if ($checkEntityRight['keep_category'] && !$checkExistingCategory) {
-                $ticket_category = ['itilcategories_id' => 0];
-                $ticket_update = array_merge($ticket_update, $ticket_category);
-            }
-
-            if (!$checkEntityRight['keep_category']) {
-                if ($checkEntityRight['itilcategories_id'] == null) {
-                    $ticket_category = ['itilcategories_id' => 0];
+            if ($checkEntityRight['keep_category']) {
+                if ($checkExistingCategory) {
+                    // Explicitly include the current category so GLPI does not reset it on entity change
+                    $currentTicket = new \Ticket();
+                    $currentTicket->getFromDB($params['id_ticket']);
+                    $ticket_category = ['itilcategories_id' => $currentTicket->fields['itilcategories_id']];
                 } else {
-                    $ticket_category = ['itilcategories_id' => $checkEntityRight['itilcategories_id']];
+                    $ticket_category = ['itilcategories_id' => 0];
                 }
-                $ticket_update = array_merge($ticket_update, $ticket_category);
+            } else {
+                $ticket_category = ['itilcategories_id' => $checkEntityRight['itilcategories_id'] ?? 0];
             }
+            $ticket_update = array_merge($ticket_update, $ticket_category);
 
             // If category is mandatory with GLPIs template and category will be null
             if ($ticket_category['itilcategories_id'] == 0
