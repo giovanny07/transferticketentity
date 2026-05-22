@@ -1,25 +1,25 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
 # Translators:
-# Yannick Comba <y.comba@maine-et-loire.fr>, 2022
-# Yannick Comba, 2022,2023
-# Département de Maine et Loire
+# Xavier CAILLAUD <thetsmr@gmail.com>, 2026
+# 
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: GLPI Plugin - admincolor\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-30 16:24+0200\n"
-"PO-Revision-Date: 2026-04-30 16:25+0200\n"
-"Last-Translator: \n"
-"Language-Team: English (United Kingdom) (Département de Maine et Loire)\n"
-"Language: es_VE\n"
+"PO-Revision-Date: 2026-05-22 06:32+0000\n"
+"Last-Translator: Xavier CAILLAUD <thetsmr@gmail.com>, 2026\n"
+"Language-Team: Spanish (Venezuela) (https://app.transifex.com/pluginsGLPI/teams/73419/es_VE/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0\n"
+"Language: es_VE\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: templates/config.html.twig:50
 msgid "Allow Transfer function"
@@ -38,8 +38,8 @@ msgid ""
 "Category will be set to null but its configured as mandatory in GLPIs "
 "template, please contact your administrator."
 msgstr ""
-"La categoría se establecerá como nula pero está configurada como obligatoria "
-"en la plantilla GLPI; comuníquese con su administrador."
+"La categoría se establecerá como nula pero está configurada como obligatoria"
+" en la plantilla GLPI; comuníquese con su administrador."
 
 #: templates/ticket.html.twig:145
 msgid "Confirm"
@@ -54,7 +54,6 @@ msgid "Escalation to"
 msgstr "Escalamiento a"
 
 #: templates/ticket.html.twig:117
-#| msgid "Justification required"
 msgid "Justification"
 msgstr "Justification"
 
@@ -75,13 +74,13 @@ msgid ""
 "No group found with « Assigned to » right while a group is required. "
 "Transfer impossible."
 msgstr ""
-"No se encontró ningún grupo con el derecho «Asignado a» mientras se requiere "
-"un grupo. Transferencia imposible."
+"No se encontró ningún grupo con el derecho «Asignado a» mientras se requiere"
+" un grupo. Transferencia imposible."
 
 #: templates/ticket.html.twig:50
 msgid ""
-"Once the transfer has been completed, the ticket will remain visible only if "
-"you have the required rights."
+"Once the transfer has been completed, the ticket will remain visible only if"
+" you have the required rights."
 msgstr ""
 "Una vez completada la transferencia, el caso permanecerá visible sólo si "
 "tienes los derechos requeridos."
@@ -99,7 +98,6 @@ msgid "Please select a valid group"
 msgstr "Por favor seleccione un grupo válido"
 
 #: templates/config.html.twig:125 templates/profile.html.twig:35
-#| msgid "Save"
 msgctxt "button"
 msgid "Save"
 msgstr "Save"
@@ -121,7 +119,8 @@ msgid "Successful transfer for ticket"
 msgstr "Successful transfer for ticket"
 
 #: front/entity.form.php:56 templates/config.html.twig:116
-msgid "The category is mandatory in the ticket template assigned to the entity"
+msgid ""
+"The category is mandatory in the ticket template assigned to the entity"
 msgstr ""
 "The category is mandatory in the ticket template assigned to the entity"
 
@@ -135,7 +134,6 @@ msgid ""
 msgstr "Traspaso autorizado sin asignación de técnico o grupo asociado"
 
 #: templates/ticket.html.twig:43
-#| msgid "Transfer Ticket Entity"
 msgid "Transfer the ticket"
 msgstr "Transfer the ticket"
 
@@ -163,46 +161,3 @@ msgstr "Debes estar asignado al caso para poder transferirlo"
 #: src/Ticket.php:637
 msgid "in the group"
 msgstr "en el grupo"
-
-#~ msgid "Change rights"
-#~ msgstr "Cambiar derechos"
-
-#~ msgid "Item successfully updated"
-#~ msgstr "Elemento actualizado exitosamente"
-
-#~ msgid "Error, please reload the page."
-#~ msgstr "Error, por favor recarga la página."
-
-#~ msgid ""
-#~ "If the problem persists, you can try to empty the cache by doing CTRL + "
-#~ "F5."
-#~ msgstr ""
-#~ "Si el problema persiste, puedes intentar vaciar el caché presionando CTRL "
-#~ "+ F5."
-
-#~ msgid "Choose your entity"
-#~ msgstr "Elige tu entidad"
-
-#~ msgid "Choose your group"
-#~ msgstr "Elige tu grupo"
-
-#~ msgid "Confirm transfer ?"
-#~ msgstr "¿Confirmar transferencia?"
-
-#~ msgid "Cancel"
-#~ msgstr "Anular"
-
-#~ msgid "Transfer canceled"
-#~ msgstr "Transferencia cancelada"
-
-#~ msgid "None"
-#~ msgstr "Ninguno"
-
-#~ msgid "No previous entity"
-#~ msgstr "Ninguna entidad previa"
-
-#~ msgid "Active"
-#~ msgstr "Activo"
-
-#~ msgid "optional"
-#~ msgstr "opcional"
