@@ -1,25 +1,25 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
 # Translators:
-# Yannick Comba <y.comba@maine-et-loire.fr>, 2022
-# Yannick Comba, 2022,2023
-# Département de Maine et Loire
+# Xavier CAILLAUD <thetsmr@gmail.com>, 2026
+# 
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: GLPI Plugin - Entity Ticket Transfer\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-30 16:24+0200\n"
-"PO-Revision-Date: 2026-04-30 16:24+0200\n"
-"Last-Translator: Yannick Comba, 2022,2023\n"
-"Language-Team: French (France) (Département de Maine et Loire)\n"
-"Language: fr_FR\n"
+"PO-Revision-Date: 2026-05-22 06:32+0000\n"
+"Last-Translator: Xavier CAILLAUD <thetsmr@gmail.com>, 2026\n"
+"Language-Team: French (France) (https://app.transifex.com/pluginsGLPI/teams/73419/fr_FR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0\n"
+"Language: fr_FR\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: templates/config.html.twig:50
 msgid "Allow Transfer function"
@@ -79,11 +79,11 @@ msgstr ""
 
 #: templates/ticket.html.twig:50
 msgid ""
-"Once the transfer has been completed, the ticket will remain visible only if "
-"you have the required rights."
+"Once the transfer has been completed, the ticket will remain visible only if"
+" you have the required rights."
 msgstr ""
-"Une fois le transfert effectué, le ticket restera visible uniquement si vous "
-"avez les droits requis."
+"Une fois le transfert effectué, le ticket restera visible uniquement si vous"
+" avez les droits requis."
 
 #: src/Ticket.php:473
 msgid "Please explain your transfer"
@@ -98,11 +98,9 @@ msgid "Please select a valid group"
 msgstr "Veuillez sélectionner un groupe valide"
 
 #: templates/config.html.twig:125 templates/profile.html.twig:35
-#, fuzzy
-#| msgid "Save"
 msgctxt "button"
 msgid "Save"
-msgstr "Sauvegarder"
+msgstr "Sauver"
 
 #: templates/ticket.html.twig:104
 msgid "Select the group to assign"
@@ -121,7 +119,8 @@ msgid "Successful transfer for ticket"
 msgstr "Transfert réussi pour le ticket"
 
 #: front/entity.form.php:56 templates/config.html.twig:116
-msgid "The category is mandatory in the ticket template assigned to the entity"
+msgid ""
+"The category is mandatory in the ticket template assigned to the entity"
 msgstr ""
 "La catégorie est obligatoire dans le gabarit de ticket affecté à l'entité"
 
@@ -165,46 +164,3 @@ msgstr ""
 #: src/Ticket.php:637
 msgid "in the group"
 msgstr "dans le groupe"
-
-#~ msgid "Transfer canceled"
-#~ msgstr "Transfert annulé"
-
-#~ msgid "Confirm transfer ?"
-#~ msgstr "Confirmer le transfert ?"
-
-#~ msgid "optional"
-#~ msgstr "facultatif"
-
-#~ msgid "Change rights"
-#~ msgstr "Modifier les droits"
-
-#~ msgid "Item successfully updated"
-#~ msgstr "Élément modifié"
-
-#~ msgid "Error, please reload the page."
-#~ msgstr "Erreur, veuillez recharger la page."
-
-#~ msgid ""
-#~ "If the problem persists, you can try to empty the cache by doing CTRL + "
-#~ "F5."
-#~ msgstr ""
-#~ "Si le problème persiste, vous pouvez tenter de vider le cache en faisant "
-#~ "CTRL + F5."
-
-#~ msgid "Choose your entity"
-#~ msgstr "Choisissez votre entité"
-
-#~ msgid "Choose your group"
-#~ msgstr "Choisissez votre groupe"
-
-#~ msgid "Cancel"
-#~ msgstr "Annuler"
-
-#~ msgid "None"
-#~ msgstr "Aucun"
-
-#~ msgid "No previous entity"
-#~ msgstr "Pas de précédente entité"
-
-#~ msgid "Active"
-#~ msgstr "Actif"
