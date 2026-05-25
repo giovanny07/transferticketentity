@@ -45,6 +45,8 @@ use Html;
 use Session;
 use Ticket_User;
 use ITILFollowup;
+use Planning;
+use TicketTask;
 use TicketTemplateMandatoryField;
 
 if (!defined('GLPI_ROOT')) {
@@ -644,14 +646,24 @@ class Ticket extends CommonDBTM
                 $content .= "<br><br>" . $justification;
             }
 
-            // Log the transfer as a followup
-            $followup = new ITILFollowup();
-            $followup->add([
-                'itemtype'  => \Ticket::class,
-                'items_id'  => $params['id_ticket'],
-                'is_private' => true,
-                'content'   => $content,
-            ]);
+            // Log the transfer as a followup or task depending on entity configuration
+            if (($checkEntityRight['log_type'] ?? 0) == 1) {
+                $task = new TicketTask();
+                $task->add([
+                    'tickets_id' => $params['id_ticket'],
+                    'is_private' => true,
+                    'state'      => Planning::INFO,
+                    'content'    => $content,
+                ]);
+            } else {
+                $followup = new ITILFollowup();
+                $followup->add([
+                    'itemtype'  => \Ticket::class,
+                    'items_id'  => $params['id_ticket'],
+                    'is_private' => true,
+                    'content'   => $content,
+                ]);
+            }
 
             $ticket = new \Ticket();
             $ticket->getFromDB($params['id_ticket']);
