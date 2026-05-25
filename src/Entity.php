@@ -222,6 +222,7 @@ class Entity extends CommonDBTM
                     0 => __('Followup', 'transferticketentity'),
                     1 => __('Task', 'transferticketentity'),
                 ],
+            ],
         );
 
         return true;
