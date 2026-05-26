@@ -1,6 +1,6 @@
 <?php
 
-/**
+/*
  -------------------------------------------------------------------------
  LICENSE
 
@@ -21,13 +21,13 @@
 
  @category  Ticket
  @package   Transferticketentity
- @author    Yannick Comba <y.comba@maine-et-loire.fr>
- @copyright 2015-2023 Département de Maine et Loire plugin team
+ @author    Yannick Comba, Xavier Caillaud, Infotel
+ @copyright 2015-2026 Transferticketentity team
  @license   AGPL License 3.0 or (at your option) any later version
             https://www.gnu.org/licenses/gpl-3.0.html
- @link      https://github.com/departement-maine-et-loire/
+ @link      https://github.com/pluginsGLPI/transferticketentity/
  --------------------------------------------------------------------------
-*/
+ */
 
 use GlpiPlugin\Transferticketentity\Profile;
 
