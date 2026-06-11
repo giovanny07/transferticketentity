@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-22 15:16+0000\n"
+"POT-Creation-Date: 2026-06-11 04:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -76,7 +76,11 @@ msgstr ""
 msgid "The category is mandatory in the ticket template assigned to the entity"
 msgstr ""
 
-#: src/Profile.php:75 src/Ticket.php:395 src/Entity.php:159
+#: front/ticket.form.php:43 src/Ticket.php:525
+msgid "Please select a valid entity"
+msgstr ""
+
+#: src/Profile.php:75 src/Entity.php:159 src/Ticket.php:396
 msgid "Transfer Ticket Entity"
 msgstr ""
 
@@ -89,54 +93,50 @@ msgid ""
 "Transfer authorized without assignment of technician or associated group"
 msgstr ""
 
-#: src/Ticket.php:144 src/Ticket.php:512
+#: src/Ticket.php:145 src/Ticket.php:513
 msgid "You must be assigned to the ticket to be able to transfer it"
 msgstr ""
 
-#: src/Ticket.php:156
+#: src/Ticket.php:157
 msgid ""
 "You don't have right to update tickets. Please contact your administrator."
 msgstr ""
 
-#: src/Ticket.php:166
+#: src/Ticket.php:167
 msgid "No entity available found, transfer impossible."
 msgstr ""
 
-#: src/Ticket.php:177
+#: src/Ticket.php:178
 msgid "Unauthorized transfer on closed ticket."
 msgstr ""
 
-#: src/Ticket.php:478
+#: src/Ticket.php:479
 msgid "Please explain your transfer"
 msgstr ""
 
-#: src/Ticket.php:495 src/Ticket.php:536
+#: src/Ticket.php:496 src/Ticket.php:537
 msgid "Please select a valid group"
 msgstr ""
 
-#: src/Ticket.php:524 front/ticket.form.php:43
-msgid "Please select a valid entity"
-msgstr ""
-
-#: src/Ticket.php:580
+#: src/Ticket.php:581
 msgid ""
 "Category will be set to null but its configured as mandatory in GLPIs "
 "template, please contact your administrator."
 msgstr ""
 
-#: src/Ticket.php:641
+#: src/Ticket.php:642
 msgid "in the group"
 msgstr ""
 
-#: src/Ticket.php:651
+#: src/Ticket.php:652
 msgid "Escalation to"
 msgstr ""
 
-#: src/Ticket.php:660
+#: src/Ticket.php:661
 msgid "Successful transfer for ticket"
 msgstr ""
 
-#: ajax/showentitygroups.php:62
+#: ajax/showentitygroups.php:60
 msgid ""
 "No group found with « Assigned to » right while a group is required. "
 "Transfer impossible."
