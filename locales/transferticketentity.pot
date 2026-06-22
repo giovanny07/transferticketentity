@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 05:06+0000\n"
+"POT-Creation-Date: 2026-05-27 04:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -76,11 +76,7 @@ msgstr ""
 msgid "The category is mandatory in the ticket template assigned to the entity"
 msgstr ""
 
-#: front/ticket.form.php:43 src/Ticket.php:525
-msgid "Please select a valid entity"
-msgstr ""
-
-#: src/Profile.php:75 src/Entity.php:159 src/Ticket.php:396
+#: src/Profile.php:75 src/Ticket.php:396 src/Entity.php:159
 msgid "Transfer Ticket Entity"
 msgstr ""
 
@@ -116,6 +112,10 @@ msgstr ""
 
 #: src/Ticket.php:496 src/Ticket.php:537
 msgid "Please select a valid group"
+msgstr ""
+
+#: src/Ticket.php:525 front/ticket.form.php:43
+msgid "Please select a valid entity"
 msgstr ""
 
 #: src/Ticket.php:581
