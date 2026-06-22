@@ -17,37 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: templates/ticket.html.twig
-msgid "Transfer the ticket"
-msgstr ""
-
-#: templates/ticket.html.twig
-msgid ""
-"Once the transfer has been completed, the ticket will remain visible only if "
-"you have the required rights."
-msgstr ""
-
-#: templates/ticket.html.twig
-msgid "Select ticket entity to transfer"
-msgstr ""
-
-#: templates/ticket.html.twig
-msgid "Select the group to assign"
-msgstr ""
-
-#: templates/ticket.html.twig
-msgid "Justification"
-msgstr ""
-
-#: templates/ticket.html.twig
-msgid ""
-"Warning, category will be reset if it does not exist in the target entity."
-msgstr ""
-
-#: templates/ticket.html.twig
-msgid "Confirm"
-msgstr ""
-
 #: templates/config.html.twig
 msgid "Settings Transfer Ticket Entity"
 msgstr ""
@@ -84,13 +53,31 @@ msgstr ""
 msgid "Transfer Ticket Entity"
 msgstr ""
 
-#: src/Profile.php:124
-msgid "Authorized entity transfer"
+#: templates/ticket.html.twig
+msgid ""
+"Once the transfer has been completed, the ticket will remain visible only if "
+"you have the required rights."
 msgstr ""
 
-#: src/Profile.php:131
+#: templates/ticket.html.twig
+msgid "Select ticket entity to transfer"
+msgstr ""
+
+#: templates/ticket.html.twig
+msgid "Select the group to assign"
+msgstr ""
+
+#: templates/ticket.html.twig
+msgid "Justification"
+msgstr ""
+
+#: templates/ticket.html.twig
 msgid ""
-"Transfer authorized without assignment of technician or associated group"
+"Warning, category will be reset if it does not exist in the target entity."
+msgstr ""
+
+#: templates/ticket.html.twig
+msgid "Confirm"
 msgstr ""
 
 #: src/Ticket.php:145 src/Ticket.php:513
@@ -138,6 +125,5 @@ msgstr ""
 
 #: ajax/showentitygroups.php:60
 msgid ""
-"No group found with « Assigned to » right while a group is required. "
-"Transfer impossible."
+"Transfer authorized without assignment of technician or associated group"
 msgstr ""
