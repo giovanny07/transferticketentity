@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-10 04:18+0000\n"
+"POT-Creation-Date: 2026-06-11 04:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,8 +45,12 @@ msgstr ""
 msgid "The category is mandatory in the ticket template assigned to the entity"
 msgstr ""
 
-#: templates/ticket.html.twig
-msgid "Transfer the ticket"
+#: front/ticket.form.php:43 src/Ticket.php:525
+msgid "Please select a valid entity"
+msgstr ""
+
+#: src/Profile.php:75 src/Entity.php:159 src/Ticket.php:396
+msgid "Transfer Ticket Entity"
 msgstr ""
 
 #: templates/ticket.html.twig
@@ -76,16 +80,6 @@ msgstr ""
 msgid "Confirm"
 msgstr ""
 
-#: ajax/showentitygroups.php:60
-msgid ""
-"No group found with « Assigned to » right while a group is required. "
-"Transfer impossible."
-msgstr ""
-
-#: front/ticket.form.php:43 src/Ticket.php:525
-msgid "Please select a valid entity"
-msgstr ""
-
 #: src/Ticket.php:145 src/Ticket.php:513
 msgid "You must be assigned to the ticket to be able to transfer it"
 msgstr ""
@@ -101,10 +95,6 @@ msgstr ""
 
 #: src/Ticket.php:178
 msgid "Unauthorized transfer on closed ticket."
-msgstr ""
-
-#: src/Ticket.php:396 src/Profile.php:75 src/Entity.php:159
-msgid "Transfer Ticket Entity"
 msgstr ""
 
 #: src/Ticket.php:479
@@ -133,11 +123,7 @@ msgstr ""
 msgid "Successful transfer for ticket"
 msgstr ""
 
-#: src/Profile.php:124
-msgid "Authorized entity transfer"
-msgstr ""
-
-#: src/Profile.php:131
+#: ajax/showentitygroups.php:60
 msgid ""
 "Transfer authorized without assignment of technician or associated group"
 msgstr ""
