@@ -649,7 +649,7 @@ class Ticket extends CommonDBTM
                 'is_private' => true,
                 'state' => Planning::INFO,
                 'content' => __(
-                    "Escalation to",
+                    "Transfer to",
                     "transferticketentity"
                 ) . " $theEntity " . $groupText
             ]);
